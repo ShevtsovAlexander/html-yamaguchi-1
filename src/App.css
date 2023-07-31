@@ -1,0 +1,396 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #f3f3f3;
+  min-height: 999px;
+  max-width: 320px;
+}
+.container-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.h-1-wrapper {
+  border: 0px none;
+  height: 168px;
+  width: 310px;
+}
+
+.overlap_desktop {
+  display: none;
+}
+
+.h-1-wrapper .text-wrapper {
+  color: #0B64FE;
+  font-family: 'Bebas Neue';
+  font-size: 38px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 100%;
+  padding-left: 9px;
+}
+
+
+.p-wrapper {
+  border: 0 none;
+  height: 228px;
+  width: 296px;
+}
+
+.p-wrapper .text-wrapper {
+  color: #181818;
+  font-family: "Ubuntu-Light";
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 27px;
+  width: 296px;
+}
+
+
+.overlap {
+  height: 310px;
+  position: relative;
+  width: 504px;
+}
+
+.element-wrapper-desktop {
+  height: 336px;
+  width: 504px;
+  position: relative;
+}
+
+.element-wrapper-1 {
+  background-image: url(./assets/стол_up.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 336px;
+  width: 505px;
+  position: absolute;
+  top: 0;
+
+}
+.element-wrapper-2 {
+  background-image: url(./assets/стол_down.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 336px;
+  width: 505px;
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes up {
+  from {
+    height: 336px;
+  }
+  to {
+    height: 275px;
+  }
+}
+@keyframes down {
+  from {
+    height: 275px;
+  }
+  to {
+    height: 336px;
+  }
+}
+
+.up {
+  animation: up 3s ease-in;
+  animation-fill-mode: forwards;
+
+}
+.down {
+  animation: down 3s ease-in;
+}
+.button-wrapper {
+  height: 62px;
+  left: 168px;
+  position: absolute;
+  top: 176px;
+  width: 149px;
+}
+
+
+.text-wrapper-1 {
+  color: #000000;
+  background-color: #a6ffff;
+  font-family: "Ubuntu-Light", Helvetica;
+  border-radius: 31px;
+  font-size: 12px;
+  font-weight: 300;
+  left: 13px;
+  letter-spacing: 0;
+  line-height: 21px;
+  position: absolute;
+  top: 0;
+  width: 61px;
+  height: 61px;
+  margin-right: 10px;
+}
+
+.text-wrapper-2 {
+  color: #000000;
+  background-color: #a6ffff;
+  font-family: "Ubuntu-Light", Helvetica;
+  border-radius: 31px;
+  font-size: 12px;
+  font-weight: 300;
+  left: 84px;;
+  letter-spacing: 0;
+  line-height: 21px;
+  position: absolute;
+  top: 0;
+  width: 61px;
+  height: 61px;
+  margin-left: 10px;
+}
+
+.p-wrapper {
+  border: 0 none;
+  height: 268px;
+  width: 291px;
+}
+
+.text-wrapper {
+  color: #181818;
+  font-family: "Ubuntu-Light", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 27px;
+  width: 291px;
+}
+
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src:
+  url('./fonts/BebasNeue Bold.ttf')
+}
+@font-face {
+  font-family:  'Ubuntu-Light';
+  src:
+  url('./fonts/Ubuntu-Light.ttf')
+
+}
+
+@media (min-width: 330px) and (max-width: 589px){
+  .container {
+    height: 100%;
+    width: 100%;
+    max-height: 1250px;
+    max-width: 992px;
+  }
+
+  .container-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h-1-wrapper .text-wrapper {
+    font-size: 44px;
+    font-weight: 300;
+    line-height: 42px;
+    width: 100%;
+    float: right;
+  }
+
+
+  .p-wrapper {
+    height: 380px;
+    width: 416px;
+
+  }
+
+  .p-wrapper .text-wrapper {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    max-width: 900px;
+    width: 100%;
+  }
+
+  }
+@media (min-width: 590px) and (max-width: 997px){
+  .container {
+    height: 100%;
+    min-height: 900px;
+    min-width: 992px;
+  }
+
+  .container-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .h-1-wrapper .text-wrapper {
+    font-size: 59px;
+    font-weight: 300;
+    line-height: 59px;
+    width: 100%;
+    padding-left: 15px;
+  }
+
+
+  .p-wrapper {
+    height: 380px;
+    width: 416px;
+
+  }
+
+  .p-wrapper .text-wrapper {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 36px;
+    max-width: 900px;
+    width: 100%;
+  }
+
+}
+@media (min-width: 992px)  {
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    min-width: 1920px;
+    min-height: 900px;
+  }
+
+  .container-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .overlap {
+    display: none;
+
+  }
+  .h-1-wrapper {
+    width: 669px;
+    height: 293px;
+ }
+
+  .h-1-wrapper .text-wrapper {
+    font-size: 62px;
+    font-weight: 300;
+    line-height: 100%;
+    padding-left: 0px;
+    font-style: normal;
+    font-family: 'Ubuntu-Light';
+  }
+  .p-wrapper {
+    width: 0;
+    height:350px;
+    min-width: 416px;
+    max-width: 416px;
+  }
+  .text-wrapper {
+    width: 100%;
+  }
+  .p-wrapper .text-wrapper {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 37px;
+    font-style: normal;
+    width: 100%;
+  }
+
+  .overlap_desktop {
+    display: flex;
+    min-width: 1300px;
+    height: 985px;
+  }
+
+
+  .element-wrapper-desktop {
+    width: 1476px;
+    height: 985px;
+    margin-left: -140px;
+  }
+
+  .element-wrapper-1 {
+    height: 985px;
+    width: 1477px;
+
+  }
+
+  .element-wrapper-2 {
+    height: 985px;
+    width: 1477px;
+
+  }
+  .button-wrapper {
+    height: 203px;
+    left: 501px;
+    position: absolute;
+    top: 519px;
+    width: 478px;
+  }
+
+
+  .button-wrapper .text-wrapper-1 {
+    border-radius: 100px;
+    font-size: 40px;
+    left: 4px;
+    line-height: 68px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .button-wrapper .text-wrapper-2 {
+    border-radius: 100px;
+    font-size: 40px;
+    left: 254px;
+    line-height: 68px;
+    width: 200px;
+    height: 200px;
+  }
+  @keyframes up {
+    from {
+      height: 985px;
+    }
+    to {
+      height: 800px;
+    }
+  }
+  @keyframes down {
+    from {
+      height: 800px;
+    }
+    to {
+      height: 985px;
+    }
+  }
+
+  .up {
+    animation: up 3s ease-in;
+    animation-fill-mode: forwards;
+
+  }
+  .down {
+    animation: down 3s ease-in;
+  }
+}
