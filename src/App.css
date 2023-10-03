@@ -1,6 +1,5 @@
 
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -206,10 +205,11 @@
     font-size: 44px;
     font-weight: 300;
     line-height: 42px;
-    width: 100%;
-    float: right;
+    width: 100vw;
   }
-
+.h-1-wrapper {
+  width: auto;
+}
 
   .p-wrapper {
     height: 380px;
@@ -231,6 +231,7 @@
     height: 100%;
     min-height: 900px;
     min-width: 992px;
+    padding: 10px;
   }
 
   .container-wrapper {
@@ -245,7 +246,7 @@
     font-size: 59px;
     font-weight: 300;
     line-height: 59px;
-    width: 100%;
+    width: 59vw;
     padding-left: 15px;
   }
 
@@ -274,8 +275,8 @@
     align-items: flex-start;
     height: 100%;
     width: 100%;
-    min-width: 1920px;
-    min-height: 900px;
+    max-width: 1920px;
+    min-height: 100vh;
   }
 
   .container-wrapper {
